@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+	<title>Toko Online Sederhana</title>
+</head>
+<body>
+
+    <h1>Toko Sederhana</h1>
+	<p>Pilih produk yang ingin di beli, masukkan ke keranjang, lalu isi data pemesanan.</p>
+	<hr>
+	
+	<form action="#" method="post">
+	
+	    <h2>1. Pilih Produk (Keranjang Belanja)</h2>
+		<table border"200" cellpadding="8" cellspacing="0">
+		    <thead>
+			    <tr>
+				    <th>Pilih</th>
+					<th>Nama Produk</th>
+					<th>Harga</th>
+					<th>Jumlah</th>
+				</tr>
+			</thead>
+			<tbody>
+			    <tr>
+				    <td>
+					    <input type="checkbox" id="item1" name="produk[]" value="Kaos Polos">
+					</td>
+					<td><label for="item1">Kaos Polos</label></td>
+					<td>rp 50.000</td>
+					<td>
+					    <input type="number" name="jumlah_kaos" value="1" min="1" max="10">
+					</td>
+				</tr>
+				<tr>
+				    <td>
+					    <input type="checkbox" id="item2" name="produk[]" value="Celana Jeans">
+					</td>
+					<td><label for="item2">Celana Jeans</label></td>
+					<td>rp 120.000</td>
+					<td>
+					    <input type="number" name="jumlah_celana" value="1" min="1" max="10">
+					</td>
+				</tr>
+				<tr>
+				    <td>
+					    <input type="checkbox" id="item3" name="produk[]" value="Topi Casual">
+					</td>
+					<td><label for="item3"Topi Casual</label></td>
+					<td>rp 30.000</td>
+					<td>
+					    <input type="number" name="jumlah_topi" value="1" min="1" max="10">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<br>
+		<hr>
+		
+		<h2>2. Data pembeli & Pengiriman</h2>
+		<p>
+		    <label for="nama">Nama Lengkap:</label><br>
+			<input type="text" id="nama" name="nama" required>
+		</p>
+		<p>
+		    <label for="hp">Nomor HP / WhatsApp:</label><br>
+			<input type="tel" id="hp" name="hp" required>
+		</p>
+		<p>
+		    <label for="alamat">Alamat Lengkap:</label><br>
+			<textarea id="alamat" name="alamat" rows="4" cols="30" required></textarea>
+		</p>
+		
+		<p>
+		    <button type="submit">Kirim Pesanan ke Keranjang / Checkout</button>
+			<button type="reset">Batal / Reset Keranjang</button>
+		</p>
+		
+	</form>
+	
+	<hr>
+	
+	<p>&copy; 2026 Toko Sederhana. Hak Cipta Dilindungi.</P>
+	
+</body>
+</html>
